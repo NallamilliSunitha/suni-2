@@ -43,11 +43,64 @@ height:300px;
 .payment-card-img { width: 50px; height: 50px; margin-right: 28px; } .custom-button { color: white; background-color: #d0b200; width: 130px; height: 45px; border-width: 0; border-radius: 8px; margin-right: 10px; } .h1 { color: blue; font-size: 10px; }
 .heading1{
 color: #183b56; font-family: "Roboto"; font-size: 28px; font-weight: 700; }
-.nav-links.active {
+
+
+.navbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.hamburger {
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-links.active {
     display: flex;
   }
-.nav-links {
-  display: none;
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 
 
