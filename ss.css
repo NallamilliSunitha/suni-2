@@ -46,4 +46,8 @@ color: #183b56; font-family: "Roboto"; font-size: 28px; font-weight: 700; }
 .nav-links.active {
     display: flex;
   }
+.nav-links {
+  display: none;
+}
+
 
